@@ -1,0 +1,18 @@
+body{
+    background-color: black;
+    color: white;
+}
+h1{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+img{
+    margin-block-end: auto;
+    margin-right: 70px;
+    margin-left: 150px;
+    
+}
+iframe{
+    margin-right:315px;
+    margin-left: 315px;
+}
