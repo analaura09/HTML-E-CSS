@@ -1,0 +1,80 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+@font-face {
+    font-family: 'OpenSans';
+    src: url(../font/OpenSans-VariableFont_wdth\,wght.ttf);
+    font-weight: normal;
+}
+
+/* TAEBELA DE CORES ESCOLHIDA SEQUENCIA DA MAIS CLARA PARA MAIS ESCURA (TONS DE AZUL)
+#A9B3C9
+#5F7198
+#2E4372
+#0E214B
+#020D24
+*/
+
+:root{ /* pseudo classe, a raiz de todo documento ( variáveis globais ) toda variável no CSS começa com dois traços "--" */
+    --cor0: #A9B3C9;
+    --cor1: #5F7198;
+    --cor2: #2E4372;
+    --cor3: #0E214B;
+    --cor4: #020D24;
+
+    --fonte-principal: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-topico:  'Tektur', cursive;
+    --fonte-destaque: 'Delicious Handrawn', cursive;
+    --fonte-gatonet: 'OpenSans', cursive;
+}
+
+*{ /* O seletor asterísco representa todos os elementos (configuração global), não havendo necessidade de especificar elemento por elemento (por exemplo h1, h2, h3, etc..) */
+    margin: 0px; /* por padrão o sistema ja colocou um valor de 16px, deixando os elementos muito espaçados */
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor0);
+    font-family: var(--fonte-gatonet);
+}
+
+header{
+    background-color: var(--cor2);
+    font-family: var(--fonte-topico);
+}
+
+header > h1{
+    color: var(--cor0);
+}
+
+header > p{ /* formatação da tag paragrafo que esta dentro da tag header */
+    color: var(--cor0);
+}
+
+nav{
+    background-color: var(--cor1);
+}
+
+main{
+    background-color: white;
+}
+
+main h2{ /* TODO H2 que estiver inserido entre as tags "main" receberão essa formatação */
+    color: var(--cor4);
+    font-family: var(--fonte-topico);
+}
+
+main h3{
+    color: var(--cor4);
+    font-family: var(--fonte-destaque);
+}
+
+footer{
+    background-color: var(--cor1);
+    color: var(--cor4);
+}
+
+/*
+img{ 
+    width: 100%;  o tamanho máximo da imagem, ajusta da imagem com base na proporção de porcentagem conforme o tamanho da tela, se a imagem for grande ao diminuir o tamanho da área da tela a imagem irá se ajustar 
+}*/
